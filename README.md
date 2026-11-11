@@ -36,3 +36,14 @@ O sistema não realiza emissão de documentos, não consulta sistemas governamen
 | **proximo** | referência a outro nó ou None | Ligação com o próximo nó da estrutura |
 
 Três serviços são carregados ao iniciar a execução: Emissão da CIN (ID 1), Regularização do CPF (ID 2) e Título de Eleitor (ID 3).
+
+---
+
+## Estrutura e Arquivos
+
+```
+CitizenAssistAI/
+├── Main.py
+├── lista_encadeada.py
+├── README.md
+└── TESTES.md
