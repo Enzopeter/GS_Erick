@@ -1,5 +1,6 @@
+
 class No:
-    def _init_(self, id, titulo, categoria, descricao, requisitos, local):
+    def __init__(self, id, titulo, categoria, descricao, requisitos, local):
         self.id = id
         self.titulo = titulo
         self.categoria = categoria
@@ -10,8 +11,9 @@ class No:
 
 
 class ListaEncadeada:
-    def _init_(self):
+    def __init__(self):
         self.inicio = None
+
 
     # Cadastrar um novo serviço
     def inserir(self, id, titulo, categoria, descricao, requisitos, local):
