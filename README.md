@@ -73,3 +73,16 @@ inicio → [CIN | próximo] → [CPF | próximo] → [Título | None]
 | `0` | Encerrar |
 
 Validações confirmadas nos testes: ID repetido; título repetido no cadastro e atualização; ID não numérico; campos vazios; registros inexistentes; opções inválidas; operações com lista vazia. Os títulos são comparados sem diferenciar maiúsculas e minúsculas, conforme a versão ajustada e testada.
+
+---
+
+## 5.Algoritmos utilizados
+
+#Busca sequencial
+A partir de inicio, o sistema percorre os nós e compara o ID ou a categoria buscada. A busca por ID termina ao encontrar o primeiro correspondente; a pesquisa por categoria percorre a lista inteira para mostrar todas as correspondências.
+
+#Selection Sort
+O algoritmo percorre a lista, identifica o menor título na parte ainda não ordenada e troca todos os campos de dados dos nós envolvidos. As referências proximo permanecem conectadas nas mesmas posições; os dados dos serviços são trocados em conjunto para manter a correspondência entre ID, título e demais atributos. O algoritmo é implementado manualmente, sem usar sort()/`sorted()` como substituto.
+
+#Indicadores
+Um percurso da lista contabiliza o total de serviços e utiliza um dicionário para agregar as quantidades por categoria.
