@@ -23,7 +23,7 @@ O sistema não realiza emissão de documentos, não consulta sistemas governamen
 
 ---
 
-### 2. Modelo dos registros
+### 2.Modelo dos registros
 
 | Campo | Tipo | Finalidade |
 |:------|:----------|:------:|
@@ -39,7 +39,7 @@ Três serviços são carregados ao iniciar a execução: Emissão da CIN (ID 1),
 
 ---
 
-## Estrutura e Arquivos
+## 3.Estrutura e Arquivos
 
 ```
 CitizenAssistAI/
@@ -47,3 +47,29 @@ CitizenAssistAI/
 ├── lista_encadeada.py
 ├── README.md
 └── TESTES.md
+```
+
+Main.py: inicia os registros e apresenta o menu de opções ao usuário.
+lista_encadeada.py: contém as classes No e ListaEncadeada e os métodos de manipulação.
+README.md: documentação do projeto, arquitetura e Big-O.
+TESTES.md: casos de teste, resultados relatados e roteiro de evidências.
+
+inicio → [CIN | próximo] → [CPF | próximo] → [Título | None]
+
+---
+
+## 4.Funcionalidades
+
+| Opção | Ação |
+| --- | --- |
+| `1` | Cadastrar serviço |
+| `2` | Listar serviços |
+| `3` | Buscar por ID |
+| `4` | Pesquisar por categoria |
+| `5` | Atualizar serviço |
+| `6` | Excluir serviço |
+| `7` | Ordenar alfabeticamente por título |
+| `8` | Exibir estatísticas (total e quantidade por categoria) |
+| `0` | Encerrar |
+
+Validações confirmadas nos testes: ID repetido; título repetido no cadastro e atualização; ID não numérico; campos vazios; registros inexistentes; opções inválidas; operações com lista vazia. Os títulos são comparados sem diferenciar maiúsculas e minúsculas, conforme a versão ajustada e testada.
