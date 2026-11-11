@@ -42,11 +42,17 @@ Três serviços são carregados ao iniciar a execução: Emissão da CIN (ID 1),
 ## 3.Estrutura e Arquivos
 
 ```
-CitizenAssistAI/
+GS_Erick/
 ├── Main.py
 ├── lista_encadeada.py
 ├── README.md
-└── TESTES.md
+├── TESTES.md
+└── evidencias/
+    ├── 01_cadastro.jpeg
+    ├── 02_busca_id.jpeg
+    ├── 03_exclusao.jpeg
+    ├── 04_ordenacao.jpeg
+    └── 05_estatisticas.jpeg
 ```
 
 Main.py: inicia os registros e apresenta o menu de opções ao usuário.
@@ -111,6 +117,14 @@ A complexidade de espaço adicional da ordenação implementada é O(1); a conta
 Foram reportados 22 casos de teste aprovados em sua execução final. Houve uma primeira rodada de 17 casos, na qual 15 passaram e 2 falharam (T09 e T11); após ajustes, ambos foram repetidos e aprovados. Em seguida, os cinco testes de lista vazia (T18–T22) foram aprovados.
 
 Resultado final informado: 22/22 aprovados (100%). Veja [`TESTES.md`](TESTES.md) para os casos, entradas e saídas esperadas. As aprovações foram confirmadas pelo desenvolvedor; anexar capturas ou gravação das saídas reais como evidência da execução.
+
+## Evidências de Funcionamento
+
+As capturas de tela dos testes do sistema estão disponíveis
+na pasta [evidencias](./evidencias).
+
+As imagens demonstram o cadastro, a busca por ID, a exclusão,
+a ordenação dos serviços e a geração de estatísticas.
 
 ---
 
