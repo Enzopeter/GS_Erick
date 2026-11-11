@@ -14,7 +14,6 @@ class ListaEncadeada:
     def __init__(self):
         self.inicio = None
 
-
     # Cadastrar um novo serviço
     def inserir(self, id, titulo, categoria, descricao, requisitos, local):
         if self.buscar_por_id(id) is not None:
@@ -64,7 +63,6 @@ class ListaEncadeada:
 
         return None
 
-
     # Buscar serviços pela categoria
     def buscar_por_categoria(self, categoria):
         atual = self.inicio
@@ -84,7 +82,6 @@ class ListaEncadeada:
         if not encontrou:
             print("Nenhum serviço encontrado nessa categoria.")
 
-
     # Atualizar informações de um serviço
     def atualizar(self, id, titulo, categoria, descricao, requisitos, local):
         atual = self.buscar_por_id(id)
@@ -101,14 +98,12 @@ class ListaEncadeada:
 
         print("Serviço atualizado com sucesso!")
 
-
     # Excluir um serviço pelo ID
     def excluir(self, id):
         if self.inicio is None:
             print("A lista está vazia.")
             return
 
-        # Verifica se o primeiro nó será excluído
         if self.inicio.id == id:
             self.inicio = self.inicio.proximo
             print("Serviço excluído com sucesso!")
@@ -136,12 +131,10 @@ class ListaEncadeada:
 
         total = 0
         categorias = {}
-
         atual = self.inicio
 
         while atual is not None:
             total += 1
-
             categoria = atual.categoria
 
             if categoria in categorias:
@@ -155,11 +148,10 @@ class ListaEncadeada:
         print(f"Total de serviços: {total}")
 
         print("\nServiços por categoria:")
-
         for categoria, quantidade in categorias.items():
             print(f"{categoria}: {quantidade}")
 
-    # Ordenar os registros alfabeticamente usando Selection Sort
+    # Ordenar alfabeticamente usando Selection Sort
     def ordenar(self):
         if self.inicio is None:
             print("A lista está vazia.")
@@ -174,6 +166,7 @@ class ListaEncadeada:
             while proximo is not None:
                 if proximo.titulo.lower() < menor.titulo.lower():
                     menor = proximo
+
                 proximo = proximo.proximo
 
             if menor != atual:
