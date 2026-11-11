@@ -118,13 +118,16 @@ Foram reportados 22 casos de teste aprovados em sua execução final. Houve uma 
 
 Resultado final informado: 22/22 aprovados (100%). Veja [`TESTES.md`](TESTES.md) para os casos, entradas e saídas esperadas. As aprovações foram confirmadas pelo desenvolvedor; anexar capturas ou gravação das saídas reais como evidência da execução.
 
-## Evidências de Funcionamento
+## Evidências de funcionamento
 
-As capturas de tela dos testes do sistema estão disponíveis
-na pasta [evidencias](./evidencias).
+As capturas de tela estão disponíveis na pasta
+[evidencias](./evidencias).
 
-As imagens demonstram o cadastro, a busca por ID, a exclusão,
-a ordenação dos serviços e a geração de estatísticas.
+- [Cadastro](./evidencias/01_cadastro.jpeg)
+- [Busca por ID](./evidencias/02_busca_id.jpeg)
+- [Exclusão](./evidencias/03_exclusao.jpeg)
+- [Ordenação](./evidencias/04_ordenacao.jpeg)
+- [Estatísticas](./evidencias/05_estatisticas.jpeg)
 
 ---
 
