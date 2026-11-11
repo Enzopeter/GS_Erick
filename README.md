@@ -78,11 +78,53 @@ Validações confirmadas nos testes: ID repetido; título repetido no cadastro e
 
 ## 5.Algoritmos utilizados
 
-#Busca sequencial
+**Busca sequencial**
 A partir de inicio, o sistema percorre os nós e compara o ID ou a categoria buscada. A busca por ID termina ao encontrar o primeiro correspondente; a pesquisa por categoria percorre a lista inteira para mostrar todas as correspondências.
 
-#Selection Sort
+**Selection Sort**
 O algoritmo percorre a lista, identifica o menor título na parte ainda não ordenada e troca todos os campos de dados dos nós envolvidos. As referências proximo permanecem conectadas nas mesmas posições; os dados dos serviços são trocados em conjunto para manter a correspondência entre ID, título e demais atributos. O algoritmo é implementado manualmente, sem usar sort()/`sorted()` como substituto.
 
-#Indicadores
+**Indicadores**
 Um percurso da lista contabiliza o total de serviços e utiliza um dicionário para agregar as quantidades por categoria.
+
+---
+
+## 6.Análise de complexidade (Big-O)
+
+| Operação | Pior caso | Justificativa |
+| --- | --- | --- |
+| Inserção no final | **O(n)** | Busca ID repetido e percorre a lista para chegar ao último nó |
+| Listagem | **O(n)** | Visita todos os nós |
+| Busca por ID | **O(n)** | Pode examinar todos os registros |
+| Pesquisa por categoria | **O(n)** | Examina todos os nós para mostrar todas as correspondências |
+| Busca por título | **O(n)** | Procura título duplicado por percurso sequencial |
+| Atualização de um registro | **O(n)** | Localiza o nó por ID; validação de título no menu também é linear |
+| Exclusão por ID | **O(n)** | Procura o registro e ajusta referências |
+| Selection Sort | **O(n²)** | Faz sucessivas comparações com os nós restantes |
+| Estatísticas | **O(n)**, em média | Percorre a lista e agrega contagens em dicionário |
+
+A complexidade de espaço adicional da ordenação implementada é O(1); a contagem de categorias utiliza O(k) espaço adicional, sendo k o número de categorias distintas. Essas classificações descrevem a implementação adotada, não tempos cronometrados.
+
+---
+
+## 7.Testes
+Foram reportados 22 casos de teste aprovados em sua execução final. Houve uma primeira rodada de 17 casos, na qual 15 passaram e 2 falharam (T09 e T11); após ajustes, ambos foram repetidos e aprovados. Em seguida, os cinco testes de lista vazia (T18–T22) foram aprovados.
+
+Resultado final informado: 22/22 aprovados (100%). Veja [`TESTES.md`](TESTES.md) para os casos, entradas e saídas esperadas. As aprovações foram confirmadas pelo desenvolvedor; anexar capturas ou gravação das saídas reais como evidência da execução.
+
+---
+
+** 8.Como executar
+1.Instalar Python 3.
+2.Manter Main.py e lista_encadeada.py na mesma pasta.
+3.Abrir um terminal nessa pasta e executar: python Main.py
+
+---
+
+## 9.Limitações e melhorias futuras
+Os dados ficam em memória: ao fechar o programa, os registros criados ou alterados pelo usuário não são preservados. A inicialização adiciona novamente os três exemplos. Persistência com arquivos CSV ou JSON, além de mais filtros de busca, são possíveis melhorias futuras, mas não são requisitos desta entrega.
+
+---
+
+## 10.Conclusão
+O projeto aplica lista encadeada, busca sequencial, Selection Sort e operações CRUD a um catálogo de serviços de documentação. As funções principais e os cenários de erro foram validados por uma bateria de 22 testes informados como aprovados. A solução prioriza clareza de implementação, organização e demonstração das estruturas e dos algoritmos, como solicitado na atividade de DSA.
