@@ -21,3 +21,18 @@ O Citizen Assist AI — Documentação é um protótipo funcional em terminal pa
 
 O sistema não realiza emissão de documentos, não consulta sistemas governamentais nem armazena números de CPF/RG de cidadãos. As descrições e os locais dos serviços iniciais são exemplos didáticos e não substituem orientações oficiais.
 
+---
+
+### 2. Modelo dos registros
+
+| Campo | Tipo | Finalidade |
+|:------|:----------|:------:|
+| **ID** | Inteiro | Identificador único do serviço |
+| **Titulo** | Texto | Nome do serviço |
+| **categoria** | texto | Grupo do serviço |
+| **descricao** | texto | Finalidade ou informação básica |
+| **requisitos** | texto | Requisitos cadastrados |
+| **local** | texto | Local/canal de atendimento cadastrado |
+| **proximo** | referência a outro nó ou None | Ligação com o próximo nó da estrutura |
+
+Três serviços são carregados ao iniciar a execução: Emissão da CIN (ID 1), Regularização do CPF (ID 2) e Título de Eleitor (ID 3).
