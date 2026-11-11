@@ -117,7 +117,9 @@ Resultado final informado: 22/22 aprovados (100%). Veja [`TESTES.md`](TESTES.md)
 ## 8.Como executar
 
 1.Instalar Python 3.
+
 2.Manter Main.py e lista_encadeada.py na mesma pasta.
+
 3.Abrir um terminal nessa pasta e executar: python Main.py
 
 ---
