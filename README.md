@@ -146,5 +146,10 @@ Os dados ficam em memória: ao fechar o programa, os registros criados ou altera
 
 ---
 
-## 10.Conclusão
+## 10.Vídeo Prático
+link do youtube: https://youtu.be/ado0isP2VMg
+
+---
+
+## 11.Conclusão
 O projeto aplica lista encadeada, busca sequencial, Selection Sort e operações CRUD a um catálogo de serviços de documentação. As funções principais e os cenários de erro foram validados por uma bateria de 22 testes informados como aprovados. A solução prioriza clareza de implementação, organização e demonstração das estruturas e dos algoritmos, como solicitado na atividade de DSA.
